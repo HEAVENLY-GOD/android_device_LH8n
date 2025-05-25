@@ -6,18 +6,6 @@
 
 DEVICE_PATH := device/tecno/LH8n
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    system \
-    vbmeta_system \
-    boot \
-    product \
-    vbmeta_vendor \
-    system_ext \
-    vendor
-BOARD_USES_RECOVERY_AS_BOOT := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -36,6 +24,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := TECNO-LH8n
 TARGET_NO_BOOTLOADER := true
+
+# Platform
+BOARD_HAS_MTK_HARDWARE := true
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -62,17 +53,13 @@ BOARD_KERNEL_SEPARATED_DTBO :=
 endif
 
 # Partitions
-BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_FLASH_BLOCK_SIZE := 262144 # BOARD_KERNEL_PAGESIZE * 64
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := tecno_dynamic_partitions
-BOARD_TECNO_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    system \
-    vendor \
-    system_ext \
-    product
+BOARD_TECNO_DYNAMIC_PARTITIONS_PARTITION_LIST := odm_dlkm product system system_ext vendor vendor_dlkm
 BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
