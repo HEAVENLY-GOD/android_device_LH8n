@@ -1,0 +1,114 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init/hw/init_connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "fstab.mt6833",
+    src: "etc/fstab.mt6833",
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+prebuilt_etc {
+    name: "init.aee.rc",
+    src: "etc/init/hw/init.aee.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+prebuilt_etc {
+    name: "init.connectivity.common.rc",
+    src: "etc/init/hw/init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init/hw/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6833.cfg",
+    src: "etc/init.insmod.mt6833.cfg",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init/hw/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "etc/init/hw/init.cgroup.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6833.rc",
+    src: "etc/init/hw/init.mt6833.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6833.usb.rc",
+    src: "etc/init/hw/init.mt6833.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "etc/init/hw/init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init/hw/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.recovery.usb.rc",
+    src: "etc/init.recovery.usb.rc",
+    recovery: true,
+    sub_dir: "init"
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "etc/init/hw/init.sensor_2_0.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6833.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mt6833.rc",
+    vendor: true
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true
+}
