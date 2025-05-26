@@ -98,3 +98,5 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 
+# Inherit the proprietary files
+$(call inherit-product, vendor/tecno/LH8n/LH8n-vendor.mk)
