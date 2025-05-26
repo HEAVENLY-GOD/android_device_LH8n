@@ -64,31 +64,21 @@ PRODUCT_PACKAGES += \
     init.tran_mcf.sh \
 
 PRODUCT_PACKAGES += \
+    init_connectivity.rc \
     fstab.mt6833 \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
     init.aee.rc \
-    init.ago.rc \
-    init.cgroup.rc \
-    init.connectivity.common.rc \
+    init.connectivity.common.rc \ 
     init.connectivity.rc \
+    init.insmod.mt6833.cfg \
     init.modem.rc \
+    init.cgroup.rc \
     init.mt6833.rc \
     init.mt6833.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
+    init.recovery.usb.rc \
     init.sensor_2_0.rc \
-    init.stnfc.rc \
-    init_connectivity.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    meta_init.vendor.rc \
-    multi_init.rc \
+    ueventd.mt6833.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6833
