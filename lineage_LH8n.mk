@@ -14,10 +14,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from FULL-64-ARMV82 device
 $(call inherit-product, device/tecno/LH8n/device.mk)
 
+BOARD_VENDOR := TECNO
+PRODUCT_NAME := lineage_LH8n
 PRODUCT_DEVICE := LH8n
-PRODUCT_NAME := TECNO_POVA_5_PRO
+PRODUCT_MANUFACTURER := TECNO
 PRODUCT_BRAND := TECNO
-PRODUCT_MANUFACTURER := tecno
+PRODUCT_MODEL := TECNO LH8n
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
