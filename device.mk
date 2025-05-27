@@ -69,16 +69,13 @@ PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.insmod.sh \
-    init.tran_mcf.sh \
-
-PRODUCT_PACKAGES += \
     init_connectivity.rc \
     fstab.mt6833 \
     init.aee.rc \
     init.connectivity.common.rc \ 
     init.connectivity.rc \
     init.insmod.mt6833.cfg \
+    init.insmod.sh \
     init.modem.rc \
     init.cgroup.rc \
     init.mt6833.rc \
