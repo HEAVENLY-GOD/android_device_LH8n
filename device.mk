@@ -79,7 +79,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Inherit the proprietary files
+# Public Libraries           
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/LH8n/LH8n-vendor.mk)
