@@ -157,6 +157,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
