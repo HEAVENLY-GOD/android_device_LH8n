@@ -123,9 +123,6 @@ BOARD_VNDK_VERSION := current
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# SEPolicy
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
-
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
