@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mt6833.rc
 
+# Boot control 
+PRODUCT_PACKAGES += \
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
