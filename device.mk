@@ -50,6 +50,12 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+PRODUCT_PACKAGES += \
+    FrameworksResLH8n \
+    SettingsResLH8n \
+    TetheringResLH8n \
+    WifiResOverlayLH8n
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
