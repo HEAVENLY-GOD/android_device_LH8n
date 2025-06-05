@@ -107,6 +107,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.audio-impl
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init_connectivity.rc \
