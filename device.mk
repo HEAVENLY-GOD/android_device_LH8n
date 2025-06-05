@@ -243,6 +243,18 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter \
     libutils-v32
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
+    libmockdrmcryptoplugin \
+    libdrm.vendor \
+    libdrm
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
