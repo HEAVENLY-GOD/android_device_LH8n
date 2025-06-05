@@ -205,6 +205,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.safe_union@1.0.vendor \
+    libhidltransport \
+    libhardware \
+    libhwbinder \
+    libhidltransport.vendor \
+    libhardware.vendor \
+    libhwbinder.vendor
 
 # Cgroup
 PRODUCT_COPY_FILES += \
