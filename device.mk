@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
     libhardware.vendor \
     libhwbinder.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.LH8n 
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:64
