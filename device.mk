@@ -223,6 +223,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek-mali
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    libdrm.vendor \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
+    libutils-v32
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
