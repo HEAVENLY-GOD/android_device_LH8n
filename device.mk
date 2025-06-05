@@ -277,6 +277,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
