@@ -129,6 +129,11 @@ PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
+# Health
+PRODUCT_PACKAGES += \
+   android.hardware.health@2.1-service \
+   android.hardware.health@2.1-impl
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
