@@ -180,6 +180,20 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.1-service.multihal \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/hiddenapi-package-allowlist-product.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/hiddenapi-package-allowlist-product.xml \
