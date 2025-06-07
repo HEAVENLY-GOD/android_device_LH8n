@@ -345,6 +345,15 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor \
+    libprotobuf-cpp-full.vendor \
+    libprotobuf-cpp-lite.vendor \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
