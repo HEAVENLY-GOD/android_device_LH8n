@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init_connectivity.rc \
     fstab.mt6833 \
     init.aee.rc \
     init.connectivity.common.rc \ 
