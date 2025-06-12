@@ -3,14 +3,6 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-
-prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "etc/init/hw/init_connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
 prebuilt_etc {
     name: "fstab.mt6833",
     src: "etc/fstab.mt6833",
@@ -41,6 +33,12 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.insmod.mt6833.cfg",
     src: "etc/init.insmod.mt6833.cfg",
+    vendor: true
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
     vendor: true
 }
 
@@ -104,11 +102,5 @@ prebuilt_etc {
     name: "ueventd.mt6833.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.mt6833.rc",
-    vendor: true
-}
-
-sh_binary {
-    name: "init.insmod.sh",
-    src: "bin/init.insmod.sh",
     vendor: true
 }
