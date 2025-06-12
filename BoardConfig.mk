@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/tecno/LH8n
-KERNEL_PATH := $(DEVICE_PATH)-kernel
+KERNEL_PATH := kernel/tecno/LH8n
 
 # Broken Rules
 BUILD_BROKEN_DUP_RULES := true
