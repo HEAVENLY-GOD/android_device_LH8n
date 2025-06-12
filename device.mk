@@ -139,6 +139,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6833 \
     init.aee.rc \
     init.connectivity.common.rc \ 
+    init_connectivity.rc \
     init.connectivity.rc \
     init.insmod.mt6833.cfg \
     init.insmod.sh \
