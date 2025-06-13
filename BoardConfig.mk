@@ -157,7 +157,9 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODU
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+   $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml \
+   hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
