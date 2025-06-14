@@ -69,7 +69,8 @@ PRODUCT_PACKAGES += \
     FrameworksResLH8n \
     SettingsResLH8n \
     TetheringResLH8n \
-    WifiResOverlayLH8n
+    WifiResOverlayLH8n \
+    SystemUIOverlayLH8n
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
