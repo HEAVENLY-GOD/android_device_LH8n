@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.cgroup.rc \
     init.mt6833.rc \
+    init.mt6833.power.rc \
     init.mt6833.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
